@@ -1,0 +1,63 @@
+namespace org.acme.delivery.legalcontract
+
+
+enum DeliveryStatus {
+  o CREATED
+  o IN_PROGRESS
+  o DONE
+}
+
+abstract transaction DeliveryTransaction {
+    --> Delivery delivery
+}
+
+transaction ServiceReceived extends DeliveryTransaction {
+}
+
+asset Delivery identified by deliveryId {
+  o String deliveryId
+  o DeliveryStatus status
+  o Long unitCount
+  --> Contract contract
+}
+
+asset Contract identified by contractId {
+  o String contractId
+  o String investorBusinessName
+  --> Investor investorIco
+  o String investorDic
+  o String investorIcdph
+  o String investorAccountNumber
+  o String investorBankName
+  o String investorLegalRegisterNumber
+  o String providerbusinessName
+  --> Provider providerIco
+  o String providerDic
+  o String providerIcdph
+  o String providerAccountNumber
+  o String providerBankName
+  o String providerLegalRegisterNumber
+  o Double unitPrice
+  o String createdAtPlace
+  o DateTime deadlineDateTime
+}
+
+concept Address {
+  o String city optional
+  o String country
+  o String street optional
+  o String zip optional
+}
+
+abstract participant Business identified by ico {
+  o String businessName
+  o String ico
+  o Address address
+  o Double accountBalance
+}
+
+participant Provider extends Business {
+}
+
+participant Investor extends Business {
+}

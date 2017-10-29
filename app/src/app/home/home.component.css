@@ -1,0 +1,12 @@
+.card .card-footer .stats {
+    font-size: 20px;
+}
+.card .card-footer .stats .material-icons {
+    font-size: 22px;
+}
+.card .card-content .category {
+    font-size: 28px;
+}
+.card-stats .card-header {
+    width: 40%;
+}

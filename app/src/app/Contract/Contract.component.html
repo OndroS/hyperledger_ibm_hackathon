@@ -1,0 +1,863 @@
+<div class="modal fade" id="addAssetModal" tabindex="-1" role="dialog" aria-labelledby="addAssetModalLabel">
+  <div class="modal-dialog" role="document" style="width: 75%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addAssetModalLabel">Create New Contract</h4>
+      </div>
+      
+      <br>
+
+      <form [formGroup]="myForm">
+          <div class="form-group text-left">
+              <label for="contractId">contractId</label>
+                <input formControlName="contractId" type="text" class="form-control">
+            </div>
+          <div class="hidden" style="height: 27px;"></div>
+    <h1 style="text-align: center">ZMLUVA O DIELO</h1>
+    
+    <p style="font-style:italic; text-align: center;">
+      uzatvorená v zmysle § 536 a nasl. zákona č. 513/1991 Zb. Obchodný zákonník v znení neskorších zmien a doplnení medzi zmluvnými stranami
+    </p>
+    
+          <div id="dar-zmluv">
+      <table>
+        <tbody><tr>
+          <td style="width: 150px"><strong><label for="meno">Objednávateľ:</label></strong></td>
+          <td><input formControlName="investorBusinessName" placeholder="IBM" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> 
+            <input type="text" placeholder="Horná 454, 921 01 Piešťany" style="width: 320px;">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>IČO: <input type="text" formControlName="investorIco" placeholder="54006125" style="width: 320px;"></td>
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>DIČ: <input formControlName="investorDic" type="text" placeholder="240325" style="width: 320px;"></td>
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>IČ DPH: <input formControlName="investorIcdph" type="text" placeholder="113132311/0200" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Č. účtu: <input formControlName="investorAccountNumber" placeholder="000098657/0100" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Bankové spojenie: <input formControlName="investorBankName" placeholder="VUB" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><small class="default">Zapísaný v:</small>
+          <input formControlName="investorLegalRegisterNumber" type="text" style="width: 320px;">
+        </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>/ ďalej len <strong>"objednávateľ"</strong>/</td>
+        </tr>
+      </tbody></table>
+      
+      <br><br>
+      
+      <table>
+        <tbody><tr>
+          <td style="width: 150px"><strong><label for="meno">Zhotoviteľ:</label></strong></td>
+          <td><strong><input formControlName="providerbusinessName" placeholder="Mindeo.sk" type="text" style="width: 320px;"></strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> 
+            <input type="text" placeholder="Lazovná 218, 851 01 Bratislava" style="width: 320px;">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>IČO: <input formControlName="providerIco" placeholder="87654" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>DIČ: <input formControlName="providerDic" type="text" placeholder="8945367" style="width: 320px;">
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>IČ DPH: <input formControlName="providerIcdph" type="text" placeholder="8975765/4986" style="width: 320px;">
+        </tr>
+        <tr>
+          <td></td>
+          <td>Č. účtu: <input formControlName="providerAccountNumber" type="text" placeholder="87654356/0100" style="width: 320px;">
+        </tr>
+        <tr>
+          <td></td>
+          <td>Bankové spojenie: <input formControlName="providerBankName" placeholder="TATRA BANKA" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><small class="default">Zapísaný v:</small>
+          <input formControlName="providerLegalRegisterNumber" type="text" style="width: 320px;">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>/ ďalej len <strong>"zhotoviteľ"</strong>/</td>
+        </tr>
+      </tbody></table>
+    </div>
+    <br>
+    
+    <h2>Čl. I<br>Predmet dohody</h2>
+    <div class="default">
+      <ol>
+        <li>Zmluvné strany sa na základe vzájomnej dohody rozhodli uzatvoriť túto zmluvu, predmetom ktorej je vykonanie diela – stavebných prác a to konkrétne opravu strešnej krytiny na budove objednávateľa.</li>
+        <li>Touto zmluvou sa zhotoviteľ zaväzuje vypracovať a odovzdať objednávateľovi dielo podľa špecifikácií uvedených v tejto zmluve, na základe požiadaviek objednávateľa a objednávateľ sa zaväzuje zaplatiť zhotoviteľovi za vykonané dielo dohodnutú cenu a riadne vykonané dielo prevziať.</li>
+      </ol>
+    </div>
+    
+    <div class="hidden">
+      <br>
+       <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area0" contenteditable="true" style="width: 654px; margin: 0px; min-height: 70px; overflow: hidden;">				<ol start="1">
+        <li>Zmluvné strany sa na základe vzájomnej dohody rozhodli uzatvoriť túto zmluvu, predmetom ktorej je vykonanie diela – stavebných prác a to konkrétne opravu strešnej krytiny na budove objednávateľa.</li>
+        <li>Touto zmluvou sa zhotoviteľ zaväzuje vypracovať a odovzdať objednávateľovi dielo podľa špecifikácií uvedených v tejto zmluve, na základe požiadaviek objednávateľa a objednávateľ sa zaväzuje zaplatiť zhotoviteľovi za vykonané dielo dohodnutú cenu a riadne vykonané dielo prevziať.</li>
+      </ol>
+      </div></div><textarea id="area0" name="c1" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;Zmluvné strany sa na základe vzájomnej dohody rozhodli uzatvoriť túto zmluvu, predmetom ktorej je vykonanie diela – stavebných prác a to konkrétne opravu strešnej krytiny na budove objednávateľa.&lt;/li&gt;
+        &lt;li&gt;Touto zmluvou sa zhotoviteľ zaväzuje vypracovať a odovzdať objednávateľovi dielo podľa špecifikácií uvedených v tejto zmluve, na základe požiadaviek objednávateľa a objednávateľ sa zaväzuje zaplatiť zhotoviteľovi za vykonané dielo dohodnutú cenu a riadne vykonané dielo prevziať.&lt;/li&gt;
+      &lt;/ol&gt;
+      </textarea>
+      <script type="text/javascript">				
+        myNicEditor.addInstance('area0');
+      </script>
+    </div>
+      
+    
+  <div class="page-divider"></div>
+  
+    <h2>Čl. II<br>Cena za vykonanie diela</h2>
+    <div class="default">
+      <ol>
+        <li>Na základe dohody zmluvných strán zaplatí objednávateľ na účet zhotoviteľa za vykonané dielo sumu vo výške <input formControlName="unitPrice" type="number" step='any' style="width: 120px;">,- EUR.</li>
+        <li>V tejto sume sú na základe dohody zmluvných strán zahrnuté náklady na vykonanie prác a náklady na materiál potrebný pri vykonaní týchto prác.</li>
+        <li>Zmluvné strany sa dohodli, že táto suma je konečná a zhotoviteľ nemá nárok účtovať si vyššiu cenu z dôvodu zmeny materiálov, výrobkov a pod., okrem prípadu, kedy dôjde k navýšeniu objemu prác z dôvodu, ktorý pri uzatvorení tejto zmluvy nebolo možné objektívne predvídať.</li>
+        <li>Objednávateľ je povinný zaplatiť dohodnutú sumu za vykonanie diela, podľa bodu 1 tohto článku do 15 dní odo dňa doručenia faktúry.</li>
+        <li>Zhotoviteľ sa zaväzuje vystaviť faktúru za vykonané dielo najneskôr  do 30 dní odo dňa odovzdania diela.</li>
+        <li>Faktúra sa považuje za zaplatenú dňom pripísania jej sumy na účet zhotoviteľa.</li>
+        <li>V prípade omeškania objednávateľa s úhradou platieb má zhotoviteľ právo účtovať odberateľovi popri plnení aj úroky z omeškania podľa Obchodného zákonníka.</li>
+      </ol>
+    </div>
+    <div class="hidden">
+      <br>
+      <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area1" contenteditable="true" style="width: 654px; margin: 0px; min-height: 70px; overflow: hidden;">				<ol start="1">
+        <li>Na základe dohody zmluvných strán zaplatí objednávateľ na účet zhotoviteľa za vykonané dielo sumu vo výške 5 000,- eur.</li>
+        <li>V tejto sume sú na základe dohody zmluvných strán zahrnuté náklady na vykonanie prác a náklady na materiál potrebný pri vykonaní týchto prác.</li>
+        <li>Zmluvné strany sa dohodli, že táto suma je konečná a zhotoviteľ nemá nárok účtovať si vyššiu cenu z dôvodu zmeny materiálov, výrobkov a pod., okrem prípadu, kedy dôjde k navýšeniu objemu prác z dôvodu, ktorý pri uzatvorení tejto zmluvy nebolo možné objektívne predvídať.</li>
+        <li>Objednávateľ je povinný zaplatiť dohodnutú sumu za vykonanie diela, podľa bodu 1 tohto článku do 15 dní odo dňa doručenia faktúry.</li>
+        <li>Zhotoviteľ sa zaväzuje vystaviť faktúru za vykonané dielo najneskôr  do 30 dní odo dňa odovzdania diela.</li>
+        <li>Faktúra sa považuje za zaplatenú dňom pripísania jej sumy na účet zhotoviteľa.</li>
+        <li>V prípade omeškania objednávateľa s úhradou platieb má zhotoviteľ právo účtovať odberateľovi popri plnení aj úroky z omeškania podľa Obchodného zákonníka.</li>
+      </ol>
+      </div></div><textarea id="area1" name="c2" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;Na základe dohody zmluvných strán zaplatí objednávateľ na účet zhotoviteľa za vykonané dielo sumu vo výške 5 000,- eur.&lt;/li&gt;
+        &lt;li&gt;V tejto sume sú na základe dohody zmluvných strán zahrnuté náklady na vykonanie prác a náklady na materiál potrebný pri vykonaní týchto prác.&lt;/li&gt;
+        &lt;li&gt;Zmluvné strany sa dohodli, že táto suma je konečná a zhotoviteľ nemá nárok účtovať si vyššiu cenu z dôvodu zmeny materiálov, výrobkov a pod., okrem prípadu, kedy dôjde k navýšeniu objemu prác z dôvodu, ktorý pri uzatvorení tejto zmluvy nebolo možné objektívne predvídať.&lt;/li&gt;
+        &lt;li&gt;Objednávateľ je povinný zaplatiť dohodnutú sumu za vykonanie diela, podľa bodu 1 tohto článku do 15 dní odo dňa doručenia faktúry.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ sa zaväzuje vystaviť faktúru za vykonané dielo najneskôr  do 30 dní odo dňa odovzdania diela.&lt;/li&gt;
+        &lt;li&gt;Faktúra sa považuje za zaplatenú dňom pripísania jej sumy na účet zhotoviteľa.&lt;/li&gt;
+        &lt;li&gt;V prípade omeškania objednávateľa s úhradou platieb má zhotoviteľ právo účtovať odberateľovi popri plnení aj úroky z omeškania podľa Obchodného zákonníka.&lt;/li&gt;
+      &lt;/ol&gt;
+      </textarea>
+      <script type="text/javascript">				
+        myNicEditor.addInstance('area1');
+      </script>
+      <br>
+    </div>
+
+    <h2>Čl. III<br>Termín plnenia diela</h2>
+    <div class="default">
+      <ol>
+        <li>
+          Zhotoviteľ vykoná dielo za podmienok dojednaných v tejto zmluve v termíne do <input formControlName="deadlineDateTime" type="text" style="width: 120px;">. Tento termín je možné predĺžiť len na základe vzájomnej dohody zmluvných strán alebo z dôvodu prípadných zlých poveternostných podmienok, kedy sa termín predlžuje o dobu, počas ktorej zhotoviteľ nemohol začať alebo pokračovať v stavebných úpravách. Za zlé poveternostné podmienky sa považujú dni, počas ktorých prší alebo sneží, alebo ak denná teplota klesne pod bod mrazu.   
+        </li>
+        <li>
+          Zhotoviteľ je povinný na žiadosť objednávateľa informovať ho o stave vykonaných prác.
+        </li>
+      </ol>
+    </div>
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="areacl3" contenteditable="true" style="width: 654px; margin: 0px; min-height: 100px; overflow: hidden;">			<ol start="1">
+      <li>Zhotoviteľ vykoná dielo za podmienok dojednaných v tejto zmluve v termíne do <input formControlName="deadlineDateTime" type="text" style="width: 120px;">. Tento termín je možné predĺžiť len na základe vzájomnej dohody zmluvných strán alebo z dôvodu prípadných zlých poveternostných podmienok, kedy sa termín predlžuje o dobu, počas ktorej zhotoviteľ nemohol začať alebo pokračovať v stavebných úpravách. Za zlé poveternostné podmienky sa považujú dni, počas ktorých prší alebo sneží, alebo ak denná teplota klesne pod bod mrazu.   </li>
+      <li>Zhotoviteľ je povinný na žiadosť objednávateľa informovať ho o stave vykonaných prác.</li>
+    </ol></div></div><textarea id="areacl3" name="c3" cols="40" style="width: 656px; height: 100px; display: none;">			&lt;ol start="1"&gt;
+      &lt;li&gt;Zhotoviteľ vykoná dielo za podmienok dojednaných v tejto zmluve v termíne do <input formControlName="deadlineDateTime" type="text" style="width: 120px;">. Tento termín je možné predĺžiť len na základe vzájomnej dohody zmluvných strán alebo z dôvodu prípadných zlých poveternostných podmienok, kedy sa termín predlžuje o dobu, počas ktorej zhotoviteľ nemohol začať alebo pokračovať v stavebných úpravách. Za zlé poveternostné podmienky sa považujú dni, počas ktorých prší alebo sneží, alebo ak denná teplota klesne pod bod mrazu.   &lt;/li&gt;
+      &lt;li&gt;Zhotoviteľ je povinný na žiadosť objednávateľa informovať ho o stave vykonaných prác.&lt;/li&gt;
+    &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('areacl3');
+    </script>	
+    <br>
+    </div>
+    
+    
+    
+    
+    <h2>Čl. IV<br>Vykonanie diela a jeho odovzdanie</h2>
+    <div class="default">
+      <ol>
+        <li>Zhotoviteľ vykoná stavebné činnosti spojené s predmetom diela podľa tejto zmluvy na svoje náklady a nebezpečenstvo, pričom sa zaväzuje rešpektovať technické, špecifické a právne predpisy.</li>
+        <li>Zhotoviteľ v plnom rozsahu zodpovedá za bezpečnosť a ochranu zdravia pri práci všetkých osôb, ktoré sú oprávnené zdržiavať sa v priestore staveniska a vybaví ich ochrannými pracovnými pomôckami. Zhotoviteľ je povinný zabezpečiť na stavbe požiarnu ochranu.</li>
+        <li>Zhotoviteľ vyzve písomne objednávateľa na prevzatie diela najmenej 3 dni pred dňom dokončenia diela. O odovzdaní a prevzatí diela spíšu zmluvné strany zápisnicu.</li>
+      </ol>
+    </div>
+    
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area2" contenteditable="true" style="width: 654px; margin: 0px; min-height: 150px; overflow: hidden;">			<ol start="1">
+        <li>Zhotoviteľ vykoná stavebné činnosti spojené s predmetom diela podľa tejto zmluvy na svoje náklady a nebezpečenstvo, pričom sa zaväzuje rešpektovať technické, špecifické a právne predpisy.</li>
+        <li>Zhotoviteľ v plnom rozsahu zodpovedá za bezpečnosť a ochranu zdravia pri práci všetkých osôb, ktoré sú oprávnené zdržiavať sa v priestore staveniska a vybaví ich ochrannými pracovnými pomôckami. Zhotoviteľ je povinný zabezpečiť na stavbe požiarnu ochranu.</li>
+        <li>Zhotoviteľ vyzve písomne objednávateľa na prevzatie diela najmenej 3 dni pred dňom dokončenia diela. O odovzdaní a prevzatí diela spíšu zmluvné strany zápisnicu.</li>
+    </ol></div></div><textarea id="area2" name="c4" cols="40" style="width: 656px; height: 120px; display: none;">			&lt;ol start="1"&gt;
+        &lt;li&gt;Zhotoviteľ vykoná stavebné činnosti spojené s predmetom diela podľa tejto zmluvy na svoje náklady a nebezpečenstvo, pričom sa zaväzuje rešpektovať technické, špecifické a právne predpisy.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ v plnom rozsahu zodpovedá za bezpečnosť a ochranu zdravia pri práci všetkých osôb, ktoré sú oprávnené zdržiavať sa v priestore staveniska a vybaví ich ochrannými pracovnými pomôckami. Zhotoviteľ je povinný zabezpečiť na stavbe požiarnu ochranu.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ vyzve písomne objednávateľa na prevzatie diela najmenej 3 dni pred dňom dokončenia diela. O odovzdaní a prevzatí diela spíšu zmluvné strany zápisnicu.&lt;/li&gt;
+    &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area2');
+    </script>
+    <br>
+    </div>
+    <div class="page-divider"></div>
+
+    <h2>Čl. V<br>Zodpovednosť za vady diela a záručná doba</h2>
+    <div class="default">
+      <ol>
+        <li>Zhotoviteľ zodpovedá za to, že predmet tejto zmluvy je zhotovený podľa noriem vzťahujúcich sa na predmet plnenia, dohodnutých zmluvných podmienok, a že počas záručnej doby bude spôsobilý na použitie na obvyklý účel a zachová si obvyklé vlastnosti.</li>
+        <li>Záručná doba je 5 rokov a začína plynúť odo dňa prevzatia diela objednávateľom.</li>
+        <li>Objednávateľ sa zaväzuje, že prípadnú reklamáciu vady diela uplatní bezodkladne po jej zistení a to písomnou formou.</li>
+        <li>Zhotoviteľ sa zaväzuje začať s odstraňovaním prípadných vád do 3 dní od uplatnenia oprávnenej reklamácie objednávateľa a vady bezplatne odstrániť v čo najkratšom technicky možnom termíne.</li>
+      </ol>
+    </div>
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area3" contenteditable="true" style="width: 654px; margin: 0px; min-height: 150px; overflow: hidden;">			<ol start="1">
+        <li>Zhotoviteľ zodpovedá za to, že predmet tejto zmluvy je zhotovený podľa noriem vzťahujúcich sa na predmet plnenia, dohodnutých zmluvných podmienok, a že počas záručnej doby bude spôsobilý na použitie na obvyklý účel a zachová si obvyklé vlastnosti.</li>
+        <li>Záručná doba je 5 rokov a začína plynúť odo dňa prevzatia diela objednávateľom.</li>
+        <li>Objednávateľ sa zaväzuje, že prípadnú reklamáciu vady diela uplatní bezodkladne po jej zistení a to písomnou formou.</li>
+        <li>Zhotoviteľ sa zaväzuje začať s odstraňovaním prípadných vád do 3 dní od uplatnenia oprávnenej reklamácie objednávateľa a vady bezplatne odstrániť v čo najkratšom technicky možnom termíne.</li>
+    </ol>	
+    </div></div><textarea id="area3" name="c5" cols="40" style="width: 656px; height: 200px; display: none;">			&lt;ol start="1"&gt;
+        &lt;li&gt;Zhotoviteľ zodpovedá za to, že predmet tejto zmluvy je zhotovený podľa noriem vzťahujúcich sa na predmet plnenia, dohodnutých zmluvných podmienok, a že počas záručnej doby bude spôsobilý na použitie na obvyklý účel a zachová si obvyklé vlastnosti.&lt;/li&gt;
+        &lt;li&gt;Záručná doba je 5 rokov a začína plynúť odo dňa prevzatia diela objednávateľom.&lt;/li&gt;
+        &lt;li&gt;Objednávateľ sa zaväzuje, že prípadnú reklamáciu vady diela uplatní bezodkladne po jej zistení a to písomnou formou.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ sa zaväzuje začať s odstraňovaním prípadných vád do 3 dní od uplatnenia oprávnenej reklamácie objednávateľa a vady bezplatne odstrániť v čo najkratšom technicky možnom termíne.&lt;/li&gt;
+    &lt;/ol&gt;	
+    </textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area3');
+    </script>
+    <br>
+          </div>			
+    
+    <h2>Čl. VI<br>Sankcie</h2>
+    <div class="default">
+      <ol>
+        <li>V prípade omeškania zhotoviteľa s odovzdaním predmetu diela v dohodnutom termíne zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10,- eur za každý deň omeškania.</li> 
+        <li>V prípade, ak dielo bude mať vady, zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10 % z ceny predmetu diela.</li>
+        <li>V prípade omeškania objednávateľa s úhradou faktúr si môže zhotoviteľ uplatniť úrok z omeškania vo výške podľa zákona č. 513/1991 Zb. Obchodného zákonníka.</li>
+      </ol>
+    </div>
+    
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area4" contenteditable="true" style="width: 654px; margin: 0px; min-height: 120px; overflow: hidden;">				<ol start="1">
+        <li>V prípade omeškania zhotoviteľa s odovzdaním predmetu diela v dohodnutom termíne zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10,- eur za každý deň omeškania.</li> 
+        <li>V prípade, ak dielo bude mať vady, zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10 % z ceny predmetu diela.</li>
+        <li>V prípade omeškania objednávateľa s úhradou faktúr si môže zhotoviteľ uplatniť úrok z omeškania vo výške podľa zákona č. 513/1991 Zb. Obchodného zákonníka.</li>
+      </ol></div></div><textarea id="area4" name="c6" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;V prípade omeškania zhotoviteľa s odovzdaním predmetu diela v dohodnutom termíne zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10,- eur za každý deň omeškania.&lt;/li&gt; 
+        &lt;li&gt;V prípade, ak dielo bude mať vady, zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10 % z ceny predmetu diela.&lt;/li&gt;
+        &lt;li&gt;V prípade omeškania objednávateľa s úhradou faktúr si môže zhotoviteľ uplatniť úrok z omeškania vo výške podľa zákona č. 513/1991 Zb. Obchodného zákonníka.&lt;/li&gt;
+      &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area4');
+    </script>	
+    <br>
+    </div>
+    
+    
+    <h2>Čl. VII<br>Zánik zmluvy</h2>
+    <div class="default">
+      <ol>
+        <li>Táto zmluva zaniká riadnym ukončením a odovzdaním diela zhotoviteľom objednávateľovi a zaplatením ceny za dielo podľa ustanovení tejto zmluvy objednávateľom zhotoviteľovi.</li>
+        <li>Táto zmluva môže zaniknúť aj na základe dohody zmluvných strán, ku dňu ktorý si dohodnú.</li>
+        <li>Objednávateľ si vyhradzuje právo odstúpenia od zmluvy v prípade ak by došlo k porušeniu povinností zhotoviteľa, pri ktorom môže dôjsť k materiálnym škodám alebo k ohrozeniu zdravia, či života alebo k hrubému porušeniu technickej disciplíny zhotoviteľa pri zhotovení diela. </li>
+        <li>Objednávateľ je oprávnený odstúpiť od zmluvy aj v prípade podstatného prekročenia času plnenia, dohodnutého v Čl. III bod 1 tejto zmluvy. Za podstatné prekročenie času plnenia sa považuje 30 dní odo dňa, od ktorého mal zhotoviteľ predmet diela odovzdať podľa Čl. III tejto zmluvy.</li>
+        <li>Zhotoviteľ je oprávnený odstúpiť od zmluvy, ak objednávateľ neplní zmluvné záväzky, a tým zhotoviteľovi znemožňuje realizáciu diela.</li>
+        <li>Odstúpenie musí byť oznámené druhej zmluvnej strane písomne. V odstúpení musí byť uvedený dôvod, pre ktorý zmluvná strana odstupuje.</li>
+      </ol>
+    </div>
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area5" contenteditable="true" style="width: 654px; margin: 0px; min-height: 120px; overflow: hidden;">				<ol start="1">
+        <li>Táto zmluva zaniká riadnym ukončením a odovzdaním diela zhotoviteľom objednávateľovi a zaplatením ceny za dielo podľa ustanovení tejto zmluvy objednávateľom zhotoviteľovi.</li>
+        <li>Táto zmluva môže zaniknúť aj na základe dohody zmluvných strán, ku dňu ktorý si dohodnú.</li>
+        <li>Objednávateľ si vyhradzuje právo odstúpenia od zmluvy v prípade ak by došlo k porušeniu povinností zhotoviteľa, pri ktorom môže dôjsť k materiálnym škodám alebo k ohrozeniu zdravia, či života alebo k hrubému porušeniu technickej disciplíny zhotoviteľa pri zhotovení diela. </li>
+        <li>Objednávateľ je oprávnený odstúpiť od zmluvy aj v prípade podstatného prekročenia času plnenia, dohodnutého v Čl. III bod 1 tejto zmluvy. Za podstatné prekročenie času plnenia sa považuje 30 dní odo dňa, od ktorého mal zhotoviteľ predmet diela odovzdať podľa Čl. III tejto zmluvy.</li>
+        <li>Zhotoviteľ je oprávnený odstúpiť od zmluvy, ak objednávateľ neplní zmluvné záväzky, a tým zhotoviteľovi znemožňuje realizáciu diela.</li>
+        <li>Odstúpenie musí byť oznámené druhej zmluvnej strane písomne. V odstúpení musí byť uvedený dôvod, pre ktorý zmluvná strana odstupuje.</li>
+      </ol></div></div><textarea id="area5" name="c7" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;Táto zmluva zaniká riadnym ukončením a odovzdaním diela zhotoviteľom objednávateľovi a zaplatením ceny za dielo podľa ustanovení tejto zmluvy objednávateľom zhotoviteľovi.&lt;/li&gt;
+        &lt;li&gt;Táto zmluva môže zaniknúť aj na základe dohody zmluvných strán, ku dňu ktorý si dohodnú.&lt;/li&gt;
+        &lt;li&gt;Objednávateľ si vyhradzuje právo odstúpenia od zmluvy v prípade ak by došlo k porušeniu povinností zhotoviteľa, pri ktorom môže dôjsť k materiálnym škodám alebo k ohrozeniu zdravia, či života alebo k hrubému porušeniu technickej disciplíny zhotoviteľa pri zhotovení diela. &lt;/li&gt;
+        &lt;li&gt;Objednávateľ je oprávnený odstúpiť od zmluvy aj v prípade podstatného prekročenia času plnenia, dohodnutého v Čl. III bod 1 tejto zmluvy. Za podstatné prekročenie času plnenia sa považuje 30 dní odo dňa, od ktorého mal zhotoviteľ predmet diela odovzdať podľa Čl. III tejto zmluvy.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ je oprávnený odstúpiť od zmluvy, ak objednávateľ neplní zmluvné záväzky, a tým zhotoviteľovi znemožňuje realizáciu diela.&lt;/li&gt;
+        &lt;li&gt;Odstúpenie musí byť oznámené druhej zmluvnej strane písomne. V odstúpení musí byť uvedený dôvod, pre ktorý zmluvná strana odstupuje.&lt;/li&gt;
+      &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area5');
+    </script>	
+    </div>
+    
+    <div class="page-divider"></div>
+    <h2>Čl. VIII<br>Záverečné ustanovenia</h2>
+    <div>
+      <ol>
+        <li>Táto zmluva nadobúda platnosť a účinnosť dňom podpísania zástupcami oboch zmluvných strán.</li>
+        <li>Zmluva môže byť zmenená len vo forme písomných dodatkov, podpísaných oprávnenými zástupcami oboch zmluvných strán.</li>
+        <li>Pokiaľ v zmluve nie je dohodnuté niečo iné, platia pre zmluvný vzťah ňou založený ustanovenia Obchodného zákonníka.</li>
+        <li>Zmluva je vypracovaná v 4 vyhotoveniach, z ktorých 2 sú určené pre zhotoviteľa a 2 pre objednávateľa.</li>
+      </ol>
+    </div>
+    
+    
+    <br>
+    <table class="podpisky" width="100%">
+      <tbody><tr>
+        <td width="50%">Objednávateľ</td>
+        <td>Zhotoviteľ</td>
+      </tr>
+    
+      <tr>
+        <td>
+        <div class="">
+        V <input formControlName="createdAtPlace" type="text" placeholder="Bratislave" style="width:120px">, dňa <input type="text" placeholder="22.10.2017" style="width: 85px">
+        </div>
+        
+        
+        </td>
+        <td>
+          <div class="">
+          V <input formControlName="createdAtPlace" type="text" placeholder="Bratislave" style="width:120px">, dňa <input type="text" placeholder="22.10.2017" style="width: 85px">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td height="55"></td><td></td>
+      </tr>
+      <tr>
+        <td>.........................................</td><td>.........................................</td>
+      </tr>
+      <tr>
+        <td style="padding-left: 48px; font-weight: bold;"><span id="obj_podpis"><input placeholder="IBM" type="text" style="width: 120px;"></span></td>
+        <td style="padding-left: 48px; font-weight: bold;"><span id="zhot_podpis"><input placeholder="Mindeo.sk" type="text" style="width: 120px;"></span></td>
+      </tr>
+    </tbody></table>
+    <br>
+    <br>
+    <div class="modal-footer">
+        <button (click)="addAsset(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+  </form>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="updateAssetModal" tabindex="-1" role="dialog" aria-labelledby="updateAssetModalLabel">
+  <div class="modal-dialog" role="document" style="width: 75%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="updateAssetModalLabel">Update Asset</h4>
+      </div>
+      
+      <form [formGroup]="myForm">
+          <div class="form-group text-left">
+              <label for="contractId">contractId</label>
+                <input formControlName="contractId" type="text" class="form-control">
+            </div>
+          <div class="hidden" style="height: 27px;"></div>
+    <h1 style="text-align: center">ZMLUVA O DIELO</h1>
+    
+    <p style="font-style:italic; text-align: center;">
+      uzatvorená v zmysle § 536 a nasl. zákona č. 513/1991 Zb. Obchodný zákonník v znení neskorších zmien a doplnení medzi zmluvnými stranami
+    </p>
+    
+          <div id="dar-zmluv">
+      <table>
+        <tbody><tr>
+          <td style="width: 150px"><strong><label for="meno">Objednávateľ:</label></strong></td>
+          <td><input formControlName="investorBusinessName" placeholder="IBM" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> 
+            <input type="text" placeholder="Horná 454, 921 01 Piešťany" style="width: 320px;">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>IČO: <input type="text" formControlName="investorIco" placeholder="54006125" style="width: 320px;"></td>
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>DIČ: <input formControlName="investorDic" type="text" placeholder="240325" style="width: 320px;"></td>
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>IČ DPH: <input formControlName="investorIcdph" type="text" placeholder="113132311/0200" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Č. účtu: <input formControlName="investorAccountNumber" placeholder="000098657/0100" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Bankové spojenie: <input formControlName="investorBankName" placeholder="VUB" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><small class="default">Zapísaný v:</small>
+          <input formControlName="investorLegalRegisterNumber" type="text" style="width: 320px;">
+        </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>/ ďalej len <strong>"objednávateľ"</strong>/</td>
+        </tr>
+      </tbody></table>
+      
+      <br><br>
+      
+      <table>
+        <tbody><tr>
+          <td style="width: 150px"><strong><label for="meno">Zhotoviteľ:</label></strong></td>
+          <td><strong><input formControlName="providerbusinessName" placeholder="Mindeo.sk" type="text" style="width: 320px;"></strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> 
+            <input type="text" placeholder="Lazovná 218, 851 01 Bratislava" style="width: 320px;">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>IČO: <input formControlName="providerIco" placeholder="87654" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>DIČ: <input formControlName="providerDic" type="text" placeholder="8945367" style="width: 320px;">
+        </tr>
+        <tr class="">
+          <td></td>
+          <td>IČ DPH: <input formControlName="providerIcdph" type="text" placeholder="8975765/4986" style="width: 320px;">
+        </tr>
+        <tr>
+          <td></td>
+          <td>Č. účtu: <input formControlName="providerAccountNumber" type="text" placeholder="87654356/0100" style="width: 320px;">
+        </tr>
+        <tr>
+          <td></td>
+          <td>Bankové spojenie: <input formControlName="providerBankName" placeholder="TATRA BANKA" type="text" style="width: 320px;"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><small class="default">Zapísaný v:</small>
+          <input formControlName="providerLegalRegisterNumber" type="text" style="width: 320px;">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>/ ďalej len <strong>"zhotoviteľ"</strong>/</td>
+        </tr>
+      </tbody></table>
+    </div>
+    <br>
+    
+    <h2>Čl. I<br>Predmet dohody</h2>
+    <div class="default">
+      <ol>
+        <li>Zmluvné strany sa na základe vzájomnej dohody rozhodli uzatvoriť túto zmluvu, predmetom ktorej je vykonanie diela – stavebných prác a to konkrétne opravu strešnej krytiny na budove objednávateľa.</li>
+        <li>Touto zmluvou sa zhotoviteľ zaväzuje vypracovať a odovzdať objednávateľovi dielo podľa špecifikácií uvedených v tejto zmluve, na základe požiadaviek objednávateľa a objednávateľ sa zaväzuje zaplatiť zhotoviteľovi za vykonané dielo dohodnutú cenu a riadne vykonané dielo prevziať.</li>
+      </ol>
+    </div>
+    
+    <div class="hidden">
+      <br>
+       <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area0" contenteditable="true" style="width: 654px; margin: 0px; min-height: 70px; overflow: hidden;">				<ol start="1">
+        <li>Zmluvné strany sa na základe vzájomnej dohody rozhodli uzatvoriť túto zmluvu, predmetom ktorej je vykonanie diela – stavebných prác a to konkrétne opravu strešnej krytiny na budove objednávateľa.</li>
+        <li>Touto zmluvou sa zhotoviteľ zaväzuje vypracovať a odovzdať objednávateľovi dielo podľa špecifikácií uvedených v tejto zmluve, na základe požiadaviek objednávateľa a objednávateľ sa zaväzuje zaplatiť zhotoviteľovi za vykonané dielo dohodnutú cenu a riadne vykonané dielo prevziať.</li>
+      </ol>
+      </div></div><textarea id="area0" name="c1" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;Zmluvné strany sa na základe vzájomnej dohody rozhodli uzatvoriť túto zmluvu, predmetom ktorej je vykonanie diela – stavebných prác a to konkrétne opravu strešnej krytiny na budove objednávateľa.&lt;/li&gt;
+        &lt;li&gt;Touto zmluvou sa zhotoviteľ zaväzuje vypracovať a odovzdať objednávateľovi dielo podľa špecifikácií uvedených v tejto zmluve, na základe požiadaviek objednávateľa a objednávateľ sa zaväzuje zaplatiť zhotoviteľovi za vykonané dielo dohodnutú cenu a riadne vykonané dielo prevziať.&lt;/li&gt;
+      &lt;/ol&gt;
+      </textarea>
+      <script type="text/javascript">				
+        myNicEditor.addInstance('area0');
+      </script>
+    </div>
+      
+    
+  <div class="page-divider"></div>
+  
+    <h2>Čl. II<br>Cena za vykonanie diela</h2>
+    <div class="default">
+      <ol>
+        <li>Na základe dohody zmluvných strán zaplatí objednávateľ na účet zhotoviteľa za vykonané dielo sumu vo výške <input formControlName="unitPrice" type="number" step='any' style="width: 120px;">,- EUR.</li>
+        <li>V tejto sume sú na základe dohody zmluvných strán zahrnuté náklady na vykonanie prác a náklady na materiál potrebný pri vykonaní týchto prác.</li>
+        <li>Zmluvné strany sa dohodli, že táto suma je konečná a zhotoviteľ nemá nárok účtovať si vyššiu cenu z dôvodu zmeny materiálov, výrobkov a pod., okrem prípadu, kedy dôjde k navýšeniu objemu prác z dôvodu, ktorý pri uzatvorení tejto zmluvy nebolo možné objektívne predvídať.</li>
+        <li>Objednávateľ je povinný zaplatiť dohodnutú sumu za vykonanie diela, podľa bodu 1 tohto článku do 15 dní odo dňa doručenia faktúry.</li>
+        <li>Zhotoviteľ sa zaväzuje vystaviť faktúru za vykonané dielo najneskôr  do 30 dní odo dňa odovzdania diela.</li>
+        <li>Faktúra sa považuje za zaplatenú dňom pripísania jej sumy na účet zhotoviteľa.</li>
+        <li>V prípade omeškania objednávateľa s úhradou platieb má zhotoviteľ právo účtovať odberateľovi popri plnení aj úroky z omeškania podľa Obchodného zákonníka.</li>
+      </ol>
+    </div>
+    <div class="hidden">
+      <br>
+      <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area1" contenteditable="true" style="width: 654px; margin: 0px; min-height: 70px; overflow: hidden;">				<ol start="1">
+        <li>Na základe dohody zmluvných strán zaplatí objednávateľ na účet zhotoviteľa za vykonané dielo sumu vo výške 5 000,- eur.</li>
+        <li>V tejto sume sú na základe dohody zmluvných strán zahrnuté náklady na vykonanie prác a náklady na materiál potrebný pri vykonaní týchto prác.</li>
+        <li>Zmluvné strany sa dohodli, že táto suma je konečná a zhotoviteľ nemá nárok účtovať si vyššiu cenu z dôvodu zmeny materiálov, výrobkov a pod., okrem prípadu, kedy dôjde k navýšeniu objemu prác z dôvodu, ktorý pri uzatvorení tejto zmluvy nebolo možné objektívne predvídať.</li>
+        <li>Objednávateľ je povinný zaplatiť dohodnutú sumu za vykonanie diela, podľa bodu 1 tohto článku do 15 dní odo dňa doručenia faktúry.</li>
+        <li>Zhotoviteľ sa zaväzuje vystaviť faktúru za vykonané dielo najneskôr  do 30 dní odo dňa odovzdania diela.</li>
+        <li>Faktúra sa považuje za zaplatenú dňom pripísania jej sumy na účet zhotoviteľa.</li>
+        <li>V prípade omeškania objednávateľa s úhradou platieb má zhotoviteľ právo účtovať odberateľovi popri plnení aj úroky z omeškania podľa Obchodného zákonníka.</li>
+      </ol>
+      </div></div><textarea id="area1" name="c2" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;Na základe dohody zmluvných strán zaplatí objednávateľ na účet zhotoviteľa za vykonané dielo sumu vo výške 5 000,- eur.&lt;/li&gt;
+        &lt;li&gt;V tejto sume sú na základe dohody zmluvných strán zahrnuté náklady na vykonanie prác a náklady na materiál potrebný pri vykonaní týchto prác.&lt;/li&gt;
+        &lt;li&gt;Zmluvné strany sa dohodli, že táto suma je konečná a zhotoviteľ nemá nárok účtovať si vyššiu cenu z dôvodu zmeny materiálov, výrobkov a pod., okrem prípadu, kedy dôjde k navýšeniu objemu prác z dôvodu, ktorý pri uzatvorení tejto zmluvy nebolo možné objektívne predvídať.&lt;/li&gt;
+        &lt;li&gt;Objednávateľ je povinný zaplatiť dohodnutú sumu za vykonanie diela, podľa bodu 1 tohto článku do 15 dní odo dňa doručenia faktúry.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ sa zaväzuje vystaviť faktúru za vykonané dielo najneskôr  do 30 dní odo dňa odovzdania diela.&lt;/li&gt;
+        &lt;li&gt;Faktúra sa považuje za zaplatenú dňom pripísania jej sumy na účet zhotoviteľa.&lt;/li&gt;
+        &lt;li&gt;V prípade omeškania objednávateľa s úhradou platieb má zhotoviteľ právo účtovať odberateľovi popri plnení aj úroky z omeškania podľa Obchodného zákonníka.&lt;/li&gt;
+      &lt;/ol&gt;
+      </textarea>
+      <script type="text/javascript">				
+        myNicEditor.addInstance('area1');
+      </script>
+      <br>
+    </div>
+
+    <h2>Čl. III<br>Termín plnenia diela</h2>
+    <div class="default">
+      <ol>
+        <li>
+          Zhotoviteľ vykoná dielo za podmienok dojednaných v tejto zmluve v termíne do <input formControlName="deadlineDateTime" type="text" style="width: 120px;">. Tento termín je možné predĺžiť len na základe vzájomnej dohody zmluvných strán alebo z dôvodu prípadných zlých poveternostných podmienok, kedy sa termín predlžuje o dobu, počas ktorej zhotoviteľ nemohol začať alebo pokračovať v stavebných úpravách. Za zlé poveternostné podmienky sa považujú dni, počas ktorých prší alebo sneží, alebo ak denná teplota klesne pod bod mrazu.   
+        </li>
+        <li>
+          Zhotoviteľ je povinný na žiadosť objednávateľa informovať ho o stave vykonaných prác.
+        </li>
+      </ol>
+    </div>
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="areacl3" contenteditable="true" style="width: 654px; margin: 0px; min-height: 100px; overflow: hidden;">			<ol start="1">
+      <li>Zhotoviteľ vykoná dielo za podmienok dojednaných v tejto zmluve v termíne do <input formControlName="deadlineDateTime" type="text" style="width: 120px;">. Tento termín je možné predĺžiť len na základe vzájomnej dohody zmluvných strán alebo z dôvodu prípadných zlých poveternostných podmienok, kedy sa termín predlžuje o dobu, počas ktorej zhotoviteľ nemohol začať alebo pokračovať v stavebných úpravách. Za zlé poveternostné podmienky sa považujú dni, počas ktorých prší alebo sneží, alebo ak denná teplota klesne pod bod mrazu.   </li>
+      <li>Zhotoviteľ je povinný na žiadosť objednávateľa informovať ho o stave vykonaných prác.</li>
+    </ol></div></div><textarea id="areacl3" name="c3" cols="40" style="width: 656px; height: 100px; display: none;">			&lt;ol start="1"&gt;
+      &lt;li&gt;Zhotoviteľ vykoná dielo za podmienok dojednaných v tejto zmluve v termíne do <input formControlName="deadlineDateTime" type="text" style="width: 120px;">. Tento termín je možné predĺžiť len na základe vzájomnej dohody zmluvných strán alebo z dôvodu prípadných zlých poveternostných podmienok, kedy sa termín predlžuje o dobu, počas ktorej zhotoviteľ nemohol začať alebo pokračovať v stavebných úpravách. Za zlé poveternostné podmienky sa považujú dni, počas ktorých prší alebo sneží, alebo ak denná teplota klesne pod bod mrazu.   &lt;/li&gt;
+      &lt;li&gt;Zhotoviteľ je povinný na žiadosť objednávateľa informovať ho o stave vykonaných prác.&lt;/li&gt;
+    &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('areacl3');
+    </script>	
+    <br>
+    </div>
+    
+    
+    
+    
+    <h2>Čl. IV<br>Vykonanie diela a jeho odovzdanie</h2>
+    <div class="default">
+      <ol>
+        <li>Zhotoviteľ vykoná stavebné činnosti spojené s predmetom diela podľa tejto zmluvy na svoje náklady a nebezpečenstvo, pričom sa zaväzuje rešpektovať technické, špecifické a právne predpisy.</li>
+        <li>Zhotoviteľ v plnom rozsahu zodpovedá za bezpečnosť a ochranu zdravia pri práci všetkých osôb, ktoré sú oprávnené zdržiavať sa v priestore staveniska a vybaví ich ochrannými pracovnými pomôckami. Zhotoviteľ je povinný zabezpečiť na stavbe požiarnu ochranu.</li>
+        <li>Zhotoviteľ vyzve písomne objednávateľa na prevzatie diela najmenej 3 dni pred dňom dokončenia diela. O odovzdaní a prevzatí diela spíšu zmluvné strany zápisnicu.</li>
+      </ol>
+    </div>
+    
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area2" contenteditable="true" style="width: 654px; margin: 0px; min-height: 150px; overflow: hidden;">			<ol start="1">
+        <li>Zhotoviteľ vykoná stavebné činnosti spojené s predmetom diela podľa tejto zmluvy na svoje náklady a nebezpečenstvo, pričom sa zaväzuje rešpektovať technické, špecifické a právne predpisy.</li>
+        <li>Zhotoviteľ v plnom rozsahu zodpovedá za bezpečnosť a ochranu zdravia pri práci všetkých osôb, ktoré sú oprávnené zdržiavať sa v priestore staveniska a vybaví ich ochrannými pracovnými pomôckami. Zhotoviteľ je povinný zabezpečiť na stavbe požiarnu ochranu.</li>
+        <li>Zhotoviteľ vyzve písomne objednávateľa na prevzatie diela najmenej 3 dni pred dňom dokončenia diela. O odovzdaní a prevzatí diela spíšu zmluvné strany zápisnicu.</li>
+    </ol></div></div><textarea id="area2" name="c4" cols="40" style="width: 656px; height: 120px; display: none;">			&lt;ol start="1"&gt;
+        &lt;li&gt;Zhotoviteľ vykoná stavebné činnosti spojené s predmetom diela podľa tejto zmluvy na svoje náklady a nebezpečenstvo, pričom sa zaväzuje rešpektovať technické, špecifické a právne predpisy.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ v plnom rozsahu zodpovedá za bezpečnosť a ochranu zdravia pri práci všetkých osôb, ktoré sú oprávnené zdržiavať sa v priestore staveniska a vybaví ich ochrannými pracovnými pomôckami. Zhotoviteľ je povinný zabezpečiť na stavbe požiarnu ochranu.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ vyzve písomne objednávateľa na prevzatie diela najmenej 3 dni pred dňom dokončenia diela. O odovzdaní a prevzatí diela spíšu zmluvné strany zápisnicu.&lt;/li&gt;
+    &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area2');
+    </script>
+    <br>
+    </div>
+    <div class="page-divider"></div>
+
+    <h2>Čl. V<br>Zodpovednosť za vady diela a záručná doba</h2>
+    <div class="default">
+      <ol>
+        <li>Zhotoviteľ zodpovedá za to, že predmet tejto zmluvy je zhotovený podľa noriem vzťahujúcich sa na predmet plnenia, dohodnutých zmluvných podmienok, a že počas záručnej doby bude spôsobilý na použitie na obvyklý účel a zachová si obvyklé vlastnosti.</li>
+        <li>Záručná doba je 5 rokov a začína plynúť odo dňa prevzatia diela objednávateľom.</li>
+        <li>Objednávateľ sa zaväzuje, že prípadnú reklamáciu vady diela uplatní bezodkladne po jej zistení a to písomnou formou.</li>
+        <li>Zhotoviteľ sa zaväzuje začať s odstraňovaním prípadných vád do 3 dní od uplatnenia oprávnenej reklamácie objednávateľa a vady bezplatne odstrániť v čo najkratšom technicky možnom termíne.</li>
+      </ol>
+    </div>
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area3" contenteditable="true" style="width: 654px; margin: 0px; min-height: 150px; overflow: hidden;">			<ol start="1">
+        <li>Zhotoviteľ zodpovedá za to, že predmet tejto zmluvy je zhotovený podľa noriem vzťahujúcich sa na predmet plnenia, dohodnutých zmluvných podmienok, a že počas záručnej doby bude spôsobilý na použitie na obvyklý účel a zachová si obvyklé vlastnosti.</li>
+        <li>Záručná doba je 5 rokov a začína plynúť odo dňa prevzatia diela objednávateľom.</li>
+        <li>Objednávateľ sa zaväzuje, že prípadnú reklamáciu vady diela uplatní bezodkladne po jej zistení a to písomnou formou.</li>
+        <li>Zhotoviteľ sa zaväzuje začať s odstraňovaním prípadných vád do 3 dní od uplatnenia oprávnenej reklamácie objednávateľa a vady bezplatne odstrániť v čo najkratšom technicky možnom termíne.</li>
+    </ol>	
+    </div></div><textarea id="area3" name="c5" cols="40" style="width: 656px; height: 200px; display: none;">			&lt;ol start="1"&gt;
+        &lt;li&gt;Zhotoviteľ zodpovedá za to, že predmet tejto zmluvy je zhotovený podľa noriem vzťahujúcich sa na predmet plnenia, dohodnutých zmluvných podmienok, a že počas záručnej doby bude spôsobilý na použitie na obvyklý účel a zachová si obvyklé vlastnosti.&lt;/li&gt;
+        &lt;li&gt;Záručná doba je 5 rokov a začína plynúť odo dňa prevzatia diela objednávateľom.&lt;/li&gt;
+        &lt;li&gt;Objednávateľ sa zaväzuje, že prípadnú reklamáciu vady diela uplatní bezodkladne po jej zistení a to písomnou formou.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ sa zaväzuje začať s odstraňovaním prípadných vád do 3 dní od uplatnenia oprávnenej reklamácie objednávateľa a vady bezplatne odstrániť v čo najkratšom technicky možnom termíne.&lt;/li&gt;
+    &lt;/ol&gt;	
+    </textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area3');
+    </script>
+    <br>
+          </div>			
+    
+    <h2>Čl. VI<br>Sankcie</h2>
+    <div class="default">
+      <ol>
+        <li>V prípade omeškania zhotoviteľa s odovzdaním predmetu diela v dohodnutom termíne zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10,- eur za každý deň omeškania.</li> 
+        <li>V prípade, ak dielo bude mať vady, zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10 % z ceny predmetu diela.</li>
+        <li>V prípade omeškania objednávateľa s úhradou faktúr si môže zhotoviteľ uplatniť úrok z omeškania vo výške podľa zákona č. 513/1991 Zb. Obchodného zákonníka.</li>
+      </ol>
+    </div>
+    
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area4" contenteditable="true" style="width: 654px; margin: 0px; min-height: 120px; overflow: hidden;">				<ol start="1">
+        <li>V prípade omeškania zhotoviteľa s odovzdaním predmetu diela v dohodnutom termíne zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10,- eur za každý deň omeškania.</li> 
+        <li>V prípade, ak dielo bude mať vady, zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10 % z ceny predmetu diela.</li>
+        <li>V prípade omeškania objednávateľa s úhradou faktúr si môže zhotoviteľ uplatniť úrok z omeškania vo výške podľa zákona č. 513/1991 Zb. Obchodného zákonníka.</li>
+      </ol></div></div><textarea id="area4" name="c6" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;V prípade omeškania zhotoviteľa s odovzdaním predmetu diela v dohodnutom termíne zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10,- eur za každý deň omeškania.&lt;/li&gt; 
+        &lt;li&gt;V prípade, ak dielo bude mať vady, zaplatí zhotoviteľ objednávateľovi zmluvnú pokutu vo výške 10 % z ceny predmetu diela.&lt;/li&gt;
+        &lt;li&gt;V prípade omeškania objednávateľa s úhradou faktúr si môže zhotoviteľ uplatniť úrok z omeškania vo výške podľa zákona č. 513/1991 Zb. Obchodného zákonníka.&lt;/li&gt;
+      &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area4');
+    </script>	
+    <br>
+    </div>
+    
+    
+    <h2>Čl. VII<br>Zánik zmluvy</h2>
+    <div class="default">
+      <ol>
+        <li>Táto zmluva zaniká riadnym ukončením a odovzdaním diela zhotoviteľom objednávateľovi a zaplatením ceny za dielo podľa ustanovení tejto zmluvy objednávateľom zhotoviteľovi.</li>
+        <li>Táto zmluva môže zaniknúť aj na základe dohody zmluvných strán, ku dňu ktorý si dohodnú.</li>
+        <li>Objednávateľ si vyhradzuje právo odstúpenia od zmluvy v prípade ak by došlo k porušeniu povinností zhotoviteľa, pri ktorom môže dôjsť k materiálnym škodám alebo k ohrozeniu zdravia, či života alebo k hrubému porušeniu technickej disciplíny zhotoviteľa pri zhotovení diela. </li>
+        <li>Objednávateľ je oprávnený odstúpiť od zmluvy aj v prípade podstatného prekročenia času plnenia, dohodnutého v Čl. III bod 1 tejto zmluvy. Za podstatné prekročenie času plnenia sa považuje 30 dní odo dňa, od ktorého mal zhotoviteľ predmet diela odovzdať podľa Čl. III tejto zmluvy.</li>
+        <li>Zhotoviteľ je oprávnený odstúpiť od zmluvy, ak objednávateľ neplní zmluvné záväzky, a tým zhotoviteľovi znemožňuje realizáciu diela.</li>
+        <li>Odstúpenie musí byť oznámené druhej zmluvnej strane písomne. V odstúpení musí byť uvedený dôvod, pre ktorý zmluvná strana odstupuje.</li>
+      </ol>
+    </div>
+    <div class="hidden">
+    <br>
+    <div style="width: 656px; overflow-y: auto; overflow-x: hidden;"><div class=" nicEdit-main" data-id="area5" contenteditable="true" style="width: 654px; margin: 0px; min-height: 120px; overflow: hidden;">				<ol start="1">
+        <li>Táto zmluva zaniká riadnym ukončením a odovzdaním diela zhotoviteľom objednávateľovi a zaplatením ceny za dielo podľa ustanovení tejto zmluvy objednávateľom zhotoviteľovi.</li>
+        <li>Táto zmluva môže zaniknúť aj na základe dohody zmluvných strán, ku dňu ktorý si dohodnú.</li>
+        <li>Objednávateľ si vyhradzuje právo odstúpenia od zmluvy v prípade ak by došlo k porušeniu povinností zhotoviteľa, pri ktorom môže dôjsť k materiálnym škodám alebo k ohrozeniu zdravia, či života alebo k hrubému porušeniu technickej disciplíny zhotoviteľa pri zhotovení diela. </li>
+        <li>Objednávateľ je oprávnený odstúpiť od zmluvy aj v prípade podstatného prekročenia času plnenia, dohodnutého v Čl. III bod 1 tejto zmluvy. Za podstatné prekročenie času plnenia sa považuje 30 dní odo dňa, od ktorého mal zhotoviteľ predmet diela odovzdať podľa Čl. III tejto zmluvy.</li>
+        <li>Zhotoviteľ je oprávnený odstúpiť od zmluvy, ak objednávateľ neplní zmluvné záväzky, a tým zhotoviteľovi znemožňuje realizáciu diela.</li>
+        <li>Odstúpenie musí byť oznámené druhej zmluvnej strane písomne. V odstúpení musí byť uvedený dôvod, pre ktorý zmluvná strana odstupuje.</li>
+      </ol></div></div><textarea id="area5" name="c7" cols="40" style="width: 656px; height: 120px; display: none;">				&lt;ol start="1"&gt;
+        &lt;li&gt;Táto zmluva zaniká riadnym ukončením a odovzdaním diela zhotoviteľom objednávateľovi a zaplatením ceny za dielo podľa ustanovení tejto zmluvy objednávateľom zhotoviteľovi.&lt;/li&gt;
+        &lt;li&gt;Táto zmluva môže zaniknúť aj na základe dohody zmluvných strán, ku dňu ktorý si dohodnú.&lt;/li&gt;
+        &lt;li&gt;Objednávateľ si vyhradzuje právo odstúpenia od zmluvy v prípade ak by došlo k porušeniu povinností zhotoviteľa, pri ktorom môže dôjsť k materiálnym škodám alebo k ohrozeniu zdravia, či života alebo k hrubému porušeniu technickej disciplíny zhotoviteľa pri zhotovení diela. &lt;/li&gt;
+        &lt;li&gt;Objednávateľ je oprávnený odstúpiť od zmluvy aj v prípade podstatného prekročenia času plnenia, dohodnutého v Čl. III bod 1 tejto zmluvy. Za podstatné prekročenie času plnenia sa považuje 30 dní odo dňa, od ktorého mal zhotoviteľ predmet diela odovzdať podľa Čl. III tejto zmluvy.&lt;/li&gt;
+        &lt;li&gt;Zhotoviteľ je oprávnený odstúpiť od zmluvy, ak objednávateľ neplní zmluvné záväzky, a tým zhotoviteľovi znemožňuje realizáciu diela.&lt;/li&gt;
+        &lt;li&gt;Odstúpenie musí byť oznámené druhej zmluvnej strane písomne. V odstúpení musí byť uvedený dôvod, pre ktorý zmluvná strana odstupuje.&lt;/li&gt;
+      &lt;/ol&gt;</textarea>
+    <script type="text/javascript">				
+      myNicEditor.addInstance('area5');
+    </script>	
+    </div>
+    
+    <div class="page-divider"></div>
+    <h2>Čl. VIII<br>Záverečné ustanovenia</h2>
+    <div>
+      <ol>
+        <li>Táto zmluva nadobúda platnosť a účinnosť dňom podpísania zástupcami oboch zmluvných strán.</li>
+        <li>Zmluva môže byť zmenená len vo forme písomných dodatkov, podpísaných oprávnenými zástupcami oboch zmluvných strán.</li>
+        <li>Pokiaľ v zmluve nie je dohodnuté niečo iné, platia pre zmluvný vzťah ňou založený ustanovenia Obchodného zákonníka.</li>
+        <li>Zmluva je vypracovaná v 4 vyhotoveniach, z ktorých 2 sú určené pre zhotoviteľa a 2 pre objednávateľa.</li>
+      </ol>
+    </div>
+    
+    
+    <br>
+    <table class="podpisky" width="100%">
+      <tbody><tr>
+        <td width="50%">Objednávateľ</td>
+        <td>Zhotoviteľ</td>
+      </tr>
+    
+      <tr>
+        <td>
+        <div class="">
+        V <input formControlName="createdAtPlace" type="text" placeholder="Bratislave" style="width:120px">, dňa <input type="text" placeholder="22.10.2017" style="width: 85px">
+        </div>
+        
+        
+        </td>
+        <td>
+          <div class="">
+          V <input formControlName="createdAtPlace" type="text" placeholder="Bratislave" style="width:120px">, dňa <input type="text" placeholder="22.10.2017" style="width: 85px">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td height="55"></td><td></td>
+      </tr>
+      <tr>
+        <td>.........................................</td><td>.........................................</td>
+      </tr>
+      <tr>
+        <td style="padding-left: 48px; font-weight: bold;"><span id="obj_podpis"><input placeholder="IBM" type="text" style="width: 120px;"></span></td>
+        <td style="padding-left: 48px; font-weight: bold;"><span id="zhot_podpis"><input placeholder="Mindeo.sk" type="text" style="width: 120px;"></span></td>
+      </tr>
+    </tbody></table>
+    <br>
+    <br>
+        <div class="modal-footer">
+          <button (click)="updateAsset(myForm)" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="deleteAssetModal" tabindex="-1" role="dialog" aria-labelledby="deleteAssetModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="deleteAssetModalLabel">Delete Asset</h4>
+      </div>
+      <form [formGroup]="myForm" (ngSubmit)="deleteAsset()">
+        <div class="modal-body">
+          Are you sure you want to delete this asset?
+        </div>
+        <div class="modal-footer">
+          <button (click)="deleteAsset()" type="submit" class="btn btn-danger" data-dismiss="modal">Yes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+	<div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+		<strong>Error:</strong> {{errorMessage}}
+	</div>
+  <!--<h1 id='assetName'>Contracts</h1>-->
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAssetModal"><i class="material-icons">receipt</i> Create New Contract</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <div class="card-header" data-background-color="purple">
+                  <h4 class="title">Contracts</h4>
+                  <p class="category">Table of actual contracts</p>
+              </div>
+              <div class="card-content table-responsive">
+                  <table class="table">
+                      <thead class="text-primary">
+                          <th>ID</th>
+                          <th>Investor</th>
+                          <th>Contractor</th>
+                          <th>Price</th>
+                          <th>Deadline</th>
+                          <th></th>
+                      </thead>
+                      <tbody>
+                          <tr *ngFor="let asset of allAssets">
+                              <td>{{asset.contractId}}</td>
+                              <td>{{asset.investorBusinessName}}</td>
+                              <td>{{asset.providerbusinessName}}</td>
+                              <td>{{asset.unitPrice}}€</td>
+                              <td>{{asset.deadlineDateTime}}</td>
+                              <td>
+                                <button (click)="getForm(asset.contractId);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateAssetModal"><i class="material-icons">fingerprint</i></button>
+                                <button (click)="setId(asset.contractId);" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteAssetModal"><i class="material-icons">delete</i></button>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
