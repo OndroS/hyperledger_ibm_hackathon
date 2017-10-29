@@ -1,57 +1,33 @@
-# Basic Sample Business Network
+# Digital Contracts saved on blockchain 
 
 > This is the "Hello World" of Hyperledger Composer samples, which demonstrates the core functionality of Hyperledger Composer by changing the value of an asset.
 
 This business network defines:
 
-**Participant**
+**Install npm in root**
 `SampleParticipant`
 
-**Asset**
+**Install npm in app**
 `SampleAsset`
 
-**Transaction**
-`SampleTransaction`
+**Generate distribution files**
+`mkdir dist`
+`composer archive create -a dist/viceversa.bna --sourceType dir --sourceName .`
 
-**Event**
-`SampleEvent`
+**Deyploying product**
+`cd dist`
+`composer network deploy -a viceversa.bna -p hlfv1 -i PeerAdmin -s randomString -A admin -S`
 
-SampleAssets are owned by a SampleParticipant, and the value property on a SampleAsset can be modified by submitting a SampleTransaction. The SampleTransaction emits a SampleEvent that notifies applications of the old and new values for each modified SampleAsset.
+**Verification of deployed network **
+`composer network ping -n viceversa -p hlfv1 -i admin -s adminpw`
 
-To test this Business Network Definition in the **Test** tab:
+**Generating REST API**
+`composer-rest-server / composer-rest-server -p hlfv1 -n viceversa -i admin -s admin -N never -w true`
+http://localhost:3000/explorer
 
-Create a `SampleParticipant` participant:
+**Generating app skeleton**
+`yo hyperledger-composer`
 
-```
-{
-  "$class": "org.acme.sample.SampleParticipant",
-  "participantId": "Toby",
-  "firstName": "Tobias",
-  "lastName": "Hunter"
-}
-```
-
-Create a `SampleAsset` asset:
-
-```
-{
-  "$class": "org.acme.sample.SampleAsset",
-  "assetId": "assetId:1",
-  "owner": "resource:org.acme.sample.SampleParticipant#Toby",
-  "value": "original value"
-}
-```
-
-Submit a `SampleTransaction` transaction:
-
-```
-{
-  "$class": "org.acme.sample.SampleTransaction",
-  "asset": "resource:org.acme.sample.SampleAsset#assetId:1",
-  "newValue": "new value"
-}
-```
-
-After submitting this transaction, you should now see the transaction in the Transaction Registry and that a `SampleEvent` has been emitted. As a result, the value of the `assetId:1` should now be `new value` in the Asset Registry.
-
-Congratulations!
+**Start app**
+`cd my-app`
+`npm start`
